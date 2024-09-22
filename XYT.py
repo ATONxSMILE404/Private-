@@ -677,7 +677,7 @@ def p4():
                 else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'12');pwv.append(frs+'@');pwv.append(frs+'@@');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(frs+'1122');pwv.append(frs+'@123');pwv.append(nmf+'123');pwv.append(nmf+'@123');pwv.append(nmf+'1234')
             else:
                 if len(frs)<3:pwv.append(nmf)
-                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'12');pwv.append(frs+'@');pwv.append(frs+'@@');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(frs+'1122');pwv.append(frs+'@123');pwv.append(nmf+'123');pwv.append(nmf+'@123');pwv.append(nmf+'1234');append(frs+'123456');append(frs+'123@');append(frs+'@1234');append(frs+'@321');append(frs+'1122@');append(frs+'098');append(frs+'00');
+                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'12');pwv.append(frs+'@');pwv.append(frs+'@@');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(frs+'1122');pwv.append(frs+'@123');pwv.append(nmf+'123');pwv.append(nmf+'@123');pwv.append(nmf+'1234');append(frs+'123456');append(frs+'123@');append(frs+'@1234');append(frs+'@321');append(frs+'1122@');append(frs+'098');append(frs+'00')
             if 'ya' in pwpluss:
                 for xpwd in pwnya:pwv.append(xpwd)
             else:pass
