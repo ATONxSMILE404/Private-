@@ -14,6 +14,7 @@ cpu = []
 l = []
 idx = []
 loop = 0
+bkas = []
 
 def oo(t):
   return '\033[1;37m['+str(t)+']\033[1;37m '
@@ -88,7 +89,7 @@ def method():
     lin3()
     def start(user):
      try:
-        global loop,idx,cll
+        global loop,idx,cll,bkas
         import requests
         r = requests.Session()
         user = user.strip()
