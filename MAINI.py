@@ -165,7 +165,7 @@ def _bd_():
     print(f'{G5}[{M}✓{Y}]{S} EXAMPLE {R}:{A} 3000{X}/{S}5000{M}/{Y}10000{A}/{G5}99999');linex()
     limit = int(input(f'{R}[{Y}✓{G4}]{Y} CHOICE  {M}:{X1} '))
     for x in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(4))
+        nmp = ''.join(random.choice(string.digits) for _ in range(2))
         user.append(nmp)
     clear()
     with Habib(max_workers=50) as sexy:
